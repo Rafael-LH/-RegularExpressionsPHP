@@ -4,6 +4,7 @@
 \w busca todo lo que pueda ser parte de una palabra incluyendo numeros pero no busca puntos, comas, dos puntos, @, corchetes,
    en pocas pabras no busca caracteres especiales  
 \s busca los espacios
+\S todo lo que NO sea espacios en blanco, que no contenga es una negacion a lo que tenemos arriba
 \. busca puntos 
 : busca dos puntos
 @ busca un arroba
@@ -36,3 +37,6 @@ de esta manera tambien me busca las extensiones de pdf,gif,jpeg y png pero de un
 
 ^\+?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?[#pe]?\d*$
 busqueda puntual de telefonos
+
+https?:\/\/[a-z]+[\w\-\.]+\.\w{2,5}/?\S*
+busqeuda de URLs asegurando de que tenga un dominio y de ahi pues traemos lo que sea 

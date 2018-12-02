@@ -7,11 +7,16 @@ rafael@rafael.com
 12345678910
 12345678910a 
 13453243
+
 url: https://www.instagram.com/p/BXB4zsUlW5Z/?taken-by=beco.mx
 url: http://instagram.com/p/blablablah
 url: http://itam.mx/testmilla
-rafael.iskoat@gmail.com
 http://instagram.com/p/blablablah
+https://www.google.com
+https://sub.dominio.de.alguien.com/archivo.html
+https://hola.pizza
+
+rafael.iskoat@gmail.com
 csv1,csv2,csv3,csv4,csv5
 Rodrigo Jiménez Gutiérrez
 
