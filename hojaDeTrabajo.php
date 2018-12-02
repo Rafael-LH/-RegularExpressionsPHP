@@ -14,10 +14,20 @@ rafael.iskoat@gmail.com
 http://instagram.com/p/blablablah
 csv1,csv2,csv3,csv4,csv5
 Rodrigo Jiménez Gutiérrez
+
 5556581111
 56-58-11-12
+56_58_11_12
+56-58-11#123
+56.58.11
+56y58r11
 56.58-11 12
+65 09 87
 302-345-9876
+552560p123
+552560e123
++521565811
+
 esto.es.un.mail+gmail@mail.com
 dominio.com
 [LOG ENTRY] [ERROR] The system is unstable

@@ -9,6 +9,7 @@
 @ busca un arroba
 ^ que inicie con
 $ que termine con 
+* puede o no existir
 + uno o mas 
 ? cero o uno
 ^$ que inicie y que termine con
@@ -31,3 +32,7 @@ y lo que no me interza solamente pongo .* que quiere decir lo que sea
 estoy buscando extenciones de imagenes y pdf, me buscara que sea pdf, jpeg,gif,png
 ^.*(pdf|png|jpeg|gif)
 de esta manera tambien me busca las extensiones de pdf,gif,jpeg y png pero de una forma mas corta que la de arriba
+
+
+^\+?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?[#pe]?\d*$
+busqueda puntual de telefonos
