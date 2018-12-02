@@ -22,11 +22,13 @@ esto.es.un.mail+gmail@mail.com
 dominio.com
 [LOG ENTRY] [ERROR] The system is unstable
 [LOG ENTRY] [WARN] The system may be down
+[LOG ENTRY] [WARN] Microsoft just bought Github
 [LOG ENTRY] [LOG] Everything is OK
 [LOG ENTRY] [LOG] [user:@beco] Logged in
 [LOG ENTRY] [LOG] [user:@beco] Clicked here
 [LOG ENTRY] [LOG] [user:@beco] Rated the app
 [LOG ENTRY] [LOG] [user:@beco] Logged out
+[LOG ENTRY] [LOG] [user:@celismx] Logged in
 [LOG ENTRY] [LOG] [user:@celismx] Logged out
 libro.hola.pdf
 libro.hola.pdf
