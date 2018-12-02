@@ -40,3 +40,6 @@ busqueda puntual de telefonos
 
 https?:\/\/[a-z]+[\w\-\.]+\.\w{2,5}/?\S*
 busqeuda de URLs asegurando de que tenga un dominio y de ahi pues traemos lo que sea 
+
+^([\w\._]{5,30}\+?\w{0,10}@[\w._]{3,}\.\w{2,5})$
+busqueda puntual de Email 

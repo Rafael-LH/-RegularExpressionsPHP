@@ -1,4 +1,3 @@
-rafael@rafael.com
 1
 12
 123
@@ -16,7 +15,6 @@ https://www.google.com
 https://sub.dominio.de.alguien.com/archivo.html
 https://hola.pizza
 
-rafael.iskoat@gmail.com
 csv1,csv2,csv3,csv4,csv5
 Rodrigo Jiménez Gutiérrez
 
@@ -33,8 +31,17 @@ Rodrigo Jiménez Gutiérrez
 552560e123
 +521565811
 
-esto.es.un.mail+gmail@mail.com
+esto.es_un.mail@mail.com
+esto.es_un.mail+complejo@mail.com
 dominio.com
+redrigo.jimenez@yahoo.com.mx
+ruben@starbucks.com
+esto_no$es_email@dominio.com
+rafael.iskoat@gmail.com
+rafael@rafael.com
+
+
+
 [LOG ENTRY] [ERROR] The system is unstable
 [LOG ENTRY] [WARN] The system may be down
 [LOG ENTRY] [WARN] Microsoft just bought Github
@@ -45,6 +52,7 @@ dominio.com
 [LOG ENTRY] [LOG] [user:@beco] Logged out
 [LOG ENTRY] [LOG] [user:@celismx] Logged in
 [LOG ENTRY] [LOG] [user:@celismx] Logged out
+
 libro.hola.pdf
 libro.hola.pdf
 hola.jpeg
