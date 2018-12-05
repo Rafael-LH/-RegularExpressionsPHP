@@ -35,11 +35,14 @@ estoy buscando extenciones de imagenes y pdf, me buscara que sea pdf, jpeg,gif,p
 de esta manera tambien me busca las extensiones de pdf,gif,jpeg y png pero de una forma mas corta que la de arriba
 
 
-^\+?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?[#pe]?\d*$
 busqueda puntual de telefonos
+^\+?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?[#pe]?\d*$
 
-https?:\/\/[a-z]+[\w\-\.]+\.\w{2,5}/?\S*
 busqeuda de URLs asegurando de que tenga un dominio y de ahi pues traemos lo que sea 
+https?:\/\/[a-z]+[\w\-\.]+\.\w{2,5}/?\S*
 
-^([\w\._]{5,30}\+?\w{0,10}@[\w._]{3,}\.\w{2,5})$
 busqueda puntual de Email 
+^([\w\._]{5,30}\+?\w{0,10}@[\w._]{3,}\.\w{2,5})$
+
+coordenadas
+^(\-?\d{1,3}\.\d{1,6},\s?\-?\d{1,3}\.\d{1,6},.*)$
