@@ -10,12 +10,13 @@
 @ busca un arroba
 ^ que inicie con
 $ que termine con 
-* puede o no existir
+* puede o no existir uno o muchos mas
 + uno o mas 
 ? cero o uno
 ^$ que inicie y que termine con
 ^()*$ que inicie y que termine con y al terminar que se vuelva a repetir
 [^a-z] estamos negando de la a la z
+() agrupamos los matches
 _ simple y sencillamente busca un guinon bajo
 [a-zA-Z0-9\.] aqui lo que hacemos es buscar de la a a la z en minuscula y mayuscula, del 0 al 9 y despues con el diagonal invertida estamos 
               escapando de los caracteres lo cual solo me buscara un . y no todos los caracteres que hay incluyendo los caracteres especiales
@@ -44,5 +45,23 @@ https?:\/\/[a-z]+[\w\-\.]+\.\w{2,5}/?\S*
 busqueda puntual de Email 
 ^([\w\._]{5,30}\+?\w{0,10}@[\w._]{3,}\.\w{2,5})$
 
-coordenadas
+coordenadas 1
 ^(\-?\d{1,3}\.\d{1,6},\s?\-?\d{1,3}\.\d{1,6},.*)$
+coordenadas 2
+^\-?[0-9]{2}\s\d{1,2}'\s\d{1,2}\.\d{2}"[WE],\s-?\d{1,2}\s\d{2}'\s\d{2}\.\d{2}"[NS]$
+
+\******************************TEMA MUY IMPORTANTE*********************************\
+Busqueda y Remplazo (TEMA MUY IMPORTANTE)
+Nosotros podemos buscar dentro de un csv registros con expresiones regulares y remplazar lo que no necesitemos por ejemplo
+solo tomar lo que necesitamos y remplazar con un insert into devidiendo lo que queremos agrupando los match con los ()
+la expresion regular para hacer esto seria la siguiente:
+
+^\d+::([\w\s,\(\)'\.\-&!\/\:]+)\s\((\d\d\d\d)\)::.*$
+
+depues en nuestro editor porner en replace lo siguiente INSERT INTO Movies(title, date) VALUES($1, $2);
+donde $1 representa el primer match de agrupamiento y el $2 el segundo match de agrupamiento 
+de esta manera nuestro csv quedaria para todos los registros de esta manera
+
+insert into peliculas(title, date) values(Toy Story, 1995)
+
+ya solo para importar el csv en nuestro gestor de bases de datos
