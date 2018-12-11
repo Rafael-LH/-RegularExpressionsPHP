@@ -5,7 +5,8 @@
    en pocas pabras no busca caracteres especiales  
 \s busca los espacios
 \S todo lo que NO sea espacios en blanco, que no contenga es una negacion a lo que tenemos arriba
-\. busca puntos 
+\n saltos de linea 
+\. busca puntos
 : busca dos puntos
 @ busca un arroba
 ^ que inicie con
@@ -58,10 +59,32 @@ la expresion regular para hacer esto seria la siguiente:
 
 ^\d+::([\w\s,\(\)'\.\-&!\/\:]+)\s\((\d\d\d\d)\)::.*$
 
-depues en nuestro editor porner en replace lo siguiente INSERT INTO Movies(title, date) VALUES($1, $2);
+depues en nuestro editor poner en replace all lo siguiente:
+INSERT INTO Movies(title, date) VALUES($1, $2);
 donde $1 representa el primer match de agrupamiento y el $2 el segundo match de agrupamiento 
 de esta manera nuestro csv quedaria para todos los registros de esta manera
 
 insert into peliculas(title, date) values(Toy Story, 1995)
 
 ya solo para importar el csv en nuestro gestor de bases de datos
+
+
+\*******************OBTENIENDO VARIABLES QUE MANDAMOS POR GET EN LA URL*******************\
+temos la siguiente url:
+http://b3co.com/?s=fotografia&mode=search&module=blog
+
+haremos una expresion regular para traernos las variables que estan por get y su valor, para esto creamos dos grupos de matchs con ()
+quedara de la siguiente manera nuestra expresion regular:
+[\?&](\w+)=([^&\n]+)
+
+remplazamos con \n$1 = $2 llamando a las dos clases que creamos (el \n es solo para que de un salto de linea)
+y el resultado es el siguiente:
+s=fotografia      
+mode=search      
+module=blog
+
+si nos fijamos estamos obteniendo el nombre de la variable y su valor, esto gracias a las dos grupos de matches 
+
+
+RegExp JS
+http://2ality.com/2017/05/regexp-named-capture-groups.html
