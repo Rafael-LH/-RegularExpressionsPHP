@@ -16,6 +16,7 @@ $ que termine con
 ? cero o uno
 ^$ que inicie y que termine con
 ^()*$ que inicie y que termine con y al terminar que se vuelva a repetir
+'/^(\d{4}\-01\-\d\d),(\w+),(\w+),(\d+),(\d+).*$/i'; la i al final de la expresion regular lo que quiere decir es que sean mayusculas y minusculas esto es para ahorrarnos a-zA-Z
 [^a-z] estamos negando de la a la z
 () agrupamos los matches
 _ simple y sencillamente busca un guinon bajo
