@@ -1,8 +1,7 @@
 . busca absolutamente todos los caracteres, nueros y caracteres especiales
 \d busca caracteres numericos
 \D busca todo lo que no sean caracteres
-\w busca todo lo que pueda ser parte de una palabra incluyendo numeros pero no busca puntos, comas, dos puntos, @, corchetes,
-   en pocas pabras no busca caracteres especiales  
+\w busca todo lo que pueda ser parte de una palabra como por ejemplo caracteres, numeros y _ guion bajo eso es todo lo que busca   
 \s busca los espacios
 \S todo lo que NO sea espacios en blanco, que no contenga es una negacion a lo que tenemos arriba
 \n saltos de linea 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS + RegEx</title>
+</head>
+<body>
+                <input type="text"
+                       id="input-text"/>
+                <input type="submit"
+                       id="btn-enviar"
+                       value='enviar'/>
+
+        <script>
+
+                document.getElementById('btn-enviar').addEventListener('click', e =>{
+                        e.preventDefault();
+                        let text = document.getElementById('input-text').value
+                        let Regex = /^([a-z]+\s?)*$/i
+
+                        //de esta manera se puede validar, primer parametro la cadena a validar segundo parametro y dentro
+                        //de la funcion match la exprecion regular
+                        console.log('Validacion echa con match');
+                        if(text.match(Regex) ){
+                            console.log('match');
+                        }else{
+                            console.log('no match');
+                        }
+                        
+                        //Tambien lo podemos hacer de esta manera. primer parametro la exprecion regular y segundo parametro dentro de la funcion test
+                        //la cadena a validar 
+                        console.log('Validacion echa con test');
+                          
+                        if(Regex.test(text) ){
+                            console.log('match');
+                        }else{
+                            console.log('no match');
+                        }
+
+                        if(text.match(/^(\w{2,10}@[\w\.]{2,}\.[\w]{2,})$/i) ){
+                                 document.getElementById('input-text').style.border = '2px solid green'
+                        }else{
+                            document.getElementById('input-text').style.border = '2px solid red'
+                        }
+                        console.log(text);
+                        
+                })
+        </script>
+    </body>
+</html>
